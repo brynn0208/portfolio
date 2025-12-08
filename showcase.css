@@ -1,0 +1,78 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font: 1.2rem/1.5 'Times New Roman', Verdana, Georgia, sans-serif;
+    background: lightgrey;
+}
+
+h4 {
+    font: 2rem/1.5 sans-serif;
+    font-variant: small-caps;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav {
+    background: gray;
+    margin: 0 rem;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background: #4AE0D0;
+}
+
+nav a:active {
+  color: #8465A5;
+}
+
+li.contains ul {
+  display: none;
+}
+
+li.contains:hover ul {
+  background: #82FFF2;
+  display: block;
+  position: absolute;
+}
+
+li.contains li {
+  float: none;
+  font-size: 0.9rem;
+}
+
+#div1 {
+    border-style: ridge;
+    border-radius: 1rem;
+    border-width: 1rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+.box {
+    height: 100%;
+    width: fit-content;
+}

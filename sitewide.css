@@ -1,0 +1,59 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font: 1.2rem/1.5 'Times New Roman', Verdana, Georgia, sans-serif;
+    background: lightgrey;
+}
+
+nav {
+    background: gray;
+    margin: 0 rem;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background: #4AE0D0;
+}
+
+nav a:active {
+  color: #8465A5;
+}
+
+li.contains ul {
+  display: none;
+}
+
+li.contains:hover ul {
+  background: #82FFF2;
+  display: block;
+  position: absolute;
+}
+
+li.contains li {
+  float: none;
+  font-size: 0.9rem;
+}
+

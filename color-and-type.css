@@ -1,0 +1,162 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font: 1.2rem/1.5 'Times New Roman', Verdana, Georgia, sans-serif;
+    background: lightgrey;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-variant: small-caps;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+nav {
+    background: gray;
+    margin: 0 rem;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background: #4AE0D0;
+}
+
+nav a:active {
+  color: #8465A5;
+}
+
+li.contains ul {
+  display: none;
+}
+
+li.contains:hover ul {
+  background: #82FFF2;
+  display: block;
+  position: absolute;
+}
+
+li.contains li {
+  float: none;
+  font-size: 0.9rem;
+}
+
+table,
+th,
+td {
+    border: solid black 3px;
+    padding: 0.1rem;
+}
+
+#header {
+    font-style: italic;
+}
+
+#name {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 2rem
+}
+
+#yellow1 {
+    text-shadow: .15rem .15rem .25rem #fff54c
+}
+
+#pink1 {
+    text-shadow: .15rem .15rem .25rem #ff8cb0
+}
+
+#blue1 {
+    text-shadow: .15rem .15rem .25rem #8cd6ff
+}
+
+#blue2 {
+    text-shadow: .15rem .15rem .25rem #2e3192
+}
+
+#red-orange {
+    text-shadow: .15rem .15rem .25rem #f1592a
+}
+
+#yellow-orange {
+    text-shadow: .15rem .15rem .25rem #fcb040
+}
+
+#pink2 {
+    text-shadow: .15rem .15rem .25rem #ff3575
+}
+
+#green1 {
+    text-shadow: .15rem .15rem .25rem #adff43
+}
+
+#green2 {
+    text-shadow: .15rem .15rem .25rem #056839
+}
+
+#yellow-green {
+    text-shadow: .15rem .15rem .25rem #8cc63f
+}
+
+#yellow2 {
+    text-shadow: .15rem .15rem .25rem #fff200
+}
+
+#purple {
+    text-shadow: .15rem .15rem .25rem #92278f
+}
+
+#blue-green {
+    text-shadow: .15rem .15rem .25rem #13a89e
+}
+
+#gray {
+    text-shadow: .15rem .15rem .25rem #7e7e7e
+}
+
+table {
+    background: whitesmoke; 
+    table-layout: fixed;
+    width: 900px;
+    margin: auto;
+}
+
+title {
+    width: 75%
+}
+
+tbody td:first-child {
+  font-style: italic;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #B3B3B3;
+}

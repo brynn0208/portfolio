@@ -3,44 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale-1">
+        <link href="showcase.css" rel="stylesheet">
         <title>Portfolio</title>
     </head>
     <body>
         <h1>Portfolio</h1>
-        <div>
-  <a href="index.html">Home</a> |
-  <a href="portfolio.html">Portfolio</a> |
-  <a href="resume.html">Resume</a> | 
-  <a href="colortheory.html">Color Theory</a> |
-  <a href="typography.html">Typography</a>
-        </div>
-        <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="contains"><a href="colortheory.html">Color Theory</a>
+                <ul>
+                    <li><a href="colortheory/colortheoryarticle.html">Color Theory Article</a></li>
+                    <li><a href="colortheory/colorthemes.html">Color Themes</a></li>
+                </ul></li>
+                <li class="contains"><a href="typography.html">Typography</a>
+                <ul>
+                    <li><a href="typography/fonttypearticle.html">Font Type Article</a></li>
+                    <li><a href="typography/typographyarticle.html">Typography Article</a></li>
+                </ul></li>
+            </ul>
+        </nav>
+        <p>
             <h4>Before & After: Great Great Great Grandfather</h4>
-            <a href="Images/AbnerHatfield.jpg">
-                <img src="Images/AbnerHatfield.jpg" alt="An old photo of and elderly gentleman sitting on a chair">
-            </a>
-            <a href="Images/AbnerHatfieldRestored.png">
-                <img src="Images/AbnerHatfieldRestored.png" alt="A colorized and cleaned version of a photo of an elderly gentleman sitting on a chair. He's pale with light, thin hair, a bushy blonde beard, and blue eyes. He wears a blue-gray suit.">
-            </a>
+            <div id="div1" class="box">
+                <a href="Images/AbnerHatfield.jpg">
+                <img src="Images/AbnerHatfield.jpg" 
+                alt="An old photo of and elderly gentleman sitting on a chair">
+                </a>
+                <a href="Images/AbnerHatfieldRestored.png">
+                <img src="Images/AbnerHatfieldRestored.png" 
+                alt="A colorized and cleaned version of a photo of an elderly gentleman sitting on a chair. He's pale with light, thin hair, a bushy blonde beard, and blue eyes. He wears a blue-gray suit.">
+                </a>
+            </div>
             <p>A before and after photo of my Great x3 Grandfather, done for a class project.</p>
             <h4>Logo</h4>
-            <a href="Images/Logo.png">
+            <div id="div1" class="box">
+                <a href="Images/Logo.png">
                 <img src="Images/Logo.png" alt="An orange-tinted logo with muddied spots that reads 'Spotted Paws Pet Care' with two black-and-white paws on opposite sides of the 'Pet Care' portion. The 'o' in spotted is blue instead of orange.">
-            </a>
+                </a>
+            </div>
             <p>A logo for a fake pet care business done for a class project.</p>
             <h4>Social Media Banners</h4>
-            <a href="Images/SocialMediaBannerFacebook.png">
+            <div id="div1" class="box">
+                <a href="Images/SocialMediaBannerFacebook.png">
                 <img src="Images/SocialMediaBannerFacebook.png" alt="A medium sized banner fit for Facebook. It has the Spotted Paws Pet Care logo against a blue-white gradient background with blue stripes under the logo.">
-            </a>
-            <a href="Images/SocialMediaBannerX.png">
+                </a>
+            </div>
+            <div id="div1" class="box">
+                <a href="Images/SocialMediaBannerX.png">
                 <img src="Images/SocialMediaBannerX.png" alt="A large sized banner fit for Twitter/X. It has the Spotted Paws Pet Care logo against a blue-white gradient background with blue stripes under the logo.">
-            </a>
+                </a>
+            </div>
             <p>Two social media banners for the aformentioned fake business done for the same class project as the logo. There's two versions for two social media sites.</p>
             <h4>Animate Project</h4>
-            <a href="Images/Animate-Product-Advertisement.html">
+            <div id="div1" class="box">
+                <a href="Images/Animate-Product-Advertisement.html">
                 <img src="Images/Animate-Product-Advertisement.png" alt="A cartoon dog sits and curiousily looks up to the logo above it against a blue background and brown mud puddle below it. Bubbles fly around depending on where the user moves their mouse.">
-            </a>
+                </a>
+            </div>
             <p>Please click for animation!</p>
-        </div>
+        </p>
     </body>
 </html>
