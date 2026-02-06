@@ -7,12 +7,21 @@
         <link href="sitewide.css" rel="stylesheet">
         <title>Color Theory</title>
     </head>
+    <main id="text">
         <script>
+            function changeColorScheme (id, backgroundColor, color) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.backgroundColor = backgroundColor;
+                    element.style.color = color;
+                }
+            }
+
             function changeFontSize(id, size) {
                 document.getElementById(id).style.fontSize = size;
             }
         </script>
-    <body id="text">
+    <body id="display">
         <h1>Typography</h1>
         <nav>
             <ul>
@@ -37,8 +46,8 @@
                 </ul></li>
                 <li class="contains"><a href="">Disply Mode</a>
                     <ul>
-                        <li><button type="button" onclick="changeStyle('display','black','white')">Dark Mode</button></li>
-                        <li><button type="button" onclick="changeStyle('display')">Light Mode</button></li>
+                        <li><button type="button" onclick="changeColorScheme('display', 'black', 'white')">Dark Mode</button></li>
+                        <li><button type="button" onclick="changeColorScheme('display', 'white', 'black')">Light Mode</button></li>
                     </ul>
                 </li>
                 <li class="contains"><a href="">Font Size</a>
@@ -77,4 +86,5 @@
         </dl>
         </div>
     </body>
+    </main>
 </html>

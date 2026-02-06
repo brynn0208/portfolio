@@ -6,9 +6,17 @@
         <link href="../color-and-type.css" rel="stylesheet">
         <title>My Portfolio</title>
     </head>
-    <main>
-        <body id="text">
+    <main id="text">
+        <body id="display">
         <script>
+            function changeColorScheme (id, backgroundColor, color) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.backgroundColor = backgroundColor;
+                    element.style.color = color;
+                }
+            }
+
             function changeFontSize(id, size) {
                 document.getElementById(id).style.fontSize = size;
             }
@@ -37,16 +45,16 @@
                 </ul></li>
                 <li class="contains"><a href="">Disply Mode</a>
                     <ul>
-                        <li><button type="button" onclick="">Dark Mode</button></li>
-                        <li><button type="button" onclick="">Light Mode</button></li>
+                        <li><button type="button" onclick="changeColorScheme('display', 'black', 'white')">Dark Mode</button></li>
+                        <li><button type="button" onclick="changeColorScheme('display', 'white', 'black')">Light Mode</button></li>
                     </ul>
                 </li>
                 <li class="contains"><a href="">Font Size</a>
-                        <ul>
-                            <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
-                            <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
-                            <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
-                        </ul>
+                    <ul>
+                        <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
+                        <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
+                        <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
