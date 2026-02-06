@@ -3,15 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale-1">
+        <link href="../normalize.css" rel="stylesheet">
         <link href="showcase.css" rel="stylesheet">
         <title>Portfolio</title>
     </head>
-    <body>
+    <main id="text">
+        <script>
+            function changeColorScheme (id, backgroundColor, color) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.backgroundColor = backgroundColor;
+                    element.style.color = color;
+                }
+            }
+
+            function changeFontSize(id, size) {
+                document.getElementById(id).style.fontSize = size;
+            }
+        </script>
         <h1>Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="contains"><a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <li><a href="portfolio/beforeandafter.html">Before and After</a></li>
+                    <li><a href="portfolio/branding.html">Branding</a></li>
+                    <li><a href="portfolio/illustration.html">Illustrations</a></li>
+                    <li><a href="portfolio/animation.html">Animation</a></li>
+                </ul></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li class="contains"><a href="colortheory.html">Color Theory</a>
                 <ul>
@@ -23,10 +43,25 @@
                     <li><a href="typography/fonttypearticle.html">Font Type Article</a></li>
                     <li><a href="typography/typographyarticle.html">Typography Article</a></li>
                 </ul></li>
+                <li class="contains"><a href="">Display Mode</a>
+                    <ul>
+                        <li><button type="button" onclick="changeColorScheme('display', 'black', 'white')">Dark Mode</button></li>
+                        <li><button type="button" onclick="changeColorScheme('display', 'white', 'black')">Light Mode</button></li>
+                    </ul>
+                </li>
+                <li class="contains"><a href="">Font Size</a>
+                    <ul>
+                        <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
+                        <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
+                        <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+        <body id="display">
+        <p>Click for individual pages!</p>
         <p>
-            <h4>Before & After: Great Great Great Grandfather</h4>
+            <h4><a href="portfolio/beforeandafter.html">Before & After: Great Great Great Grandfather</a></h4>
             <div id="div1" class="box">
                 <a href="Images/AbnerHatfield.jpg">
                 <img src="Images/AbnerHatfield.jpg" 
@@ -37,15 +72,12 @@
                 alt="A colorized and cleaned version of a photo of an elderly gentleman sitting on a chair. He's pale with light, thin hair, a bushy blonde beard, and blue eyes. He wears a blue-gray suit.">
                 </a>
             </div>
-            <p>A before and after photo of my Great x3 Grandfather, done for a class project.</p>
-            <h4>Logo</h4>
+            <h4><a href="portfolio/branding.html">Branding</a></h4>
             <div id="div1" class="box">
                 <a href="Images/Logo.png">
                 <img src="Images/Logo.png" alt="An orange-tinted logo with muddied spots that reads 'Spotted Paws Pet Care' with two black-and-white paws on opposite sides of the 'Pet Care' portion. The 'o' in spotted is blue instead of orange.">
                 </a>
             </div>
-            <p>A logo for a fake pet care business done for a class project.</p>
-            <h4>Social Media Banners</h4>
             <div id="div1" class="box">
                 <a href="Images/SocialMediaBannerFacebook.png">
                 <img src="Images/SocialMediaBannerFacebook.png" alt="A medium sized banner fit for Facebook. It has the Spotted Paws Pet Care logo against a blue-white gradient background with blue stripes under the logo.">
@@ -56,14 +88,29 @@
                 <img src="Images/SocialMediaBannerX.png" alt="A large sized banner fit for Twitter/X. It has the Spotted Paws Pet Care logo against a blue-white gradient background with blue stripes under the logo.">
                 </a>
             </div>
-            <p>Two social media banners for the aformentioned fake business done for the same class project as the logo. There's two versions for two social media sites.</p>
-            <h4>Animate Project</h4>
+            <h4><a href="portfolio/illustration.html">Illustrations</a></h4>
+            <div id="div1" class="box">
+                <a href="portfolio/Images/Beanstalk.png">
+                <img src="portfolio/Images/Beanstalk.png" alt="A sky-reaching beanstalk against a sunny sky">
+                </a>
+            </div>
+            <div id="div1" class="box">
+                <a href="portfolio/Images/Cavern.png">
+                <img src="portfolio/Images/Cavern.png" alt="A dark cavern with a flowing lava river">
+                </a>
+            </div>
+            <div id="div1" class="box">
+                <a href="portfolio/Images/ThreeLittleBirds.png">
+                <img src="portfolio/Images/ThreeLittleBirds.png" alt="Three silly looking birds perched or sitting on a branch">
+                </a>
+            </div>
+            <h4><a href="portfolio/animation.html">Animate Project</a></h4>
             <div id="div1" class="box">
                 <a href="Images/Animate-Product-Advertisement.html">
                 <img src="Images/Animate-Product-Advertisement.png" alt="A cartoon dog sits and curiousily looks up to the logo above it against a blue background and brown mud puddle below it. Bubbles fly around depending on where the user moves their mouse.">
                 </a>
             </div>
-            <p>Please click for animation!</p>
         </p>
     </body>
+    </main>
 </html>

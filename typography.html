@@ -7,12 +7,23 @@
         <link href="sitewide.css" rel="stylesheet">
         <title>Color Theory</title>
     </head>
-    <body>
+        <script>
+            function changeFontSize(id, size) {
+                document.getElementById(id).style.fontSize = size;
+            }
+        </script>
+    <body id="text">
         <h1>Typography</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="contains"><a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <li><a href="portfolio/beforeandafter.html">Before and After</a></li>
+                    <li><a href="portfolio/branding.html">Branding</a></li>
+                    <li><a href="portfolio/illustration.html">Illustrations</a></li>
+                    <li><a href="portfolio/animation.html">Animation</a></li>
+                </ul></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li class="contains"><a href="colortheory.html">Color Theory</a>
                 <ul>
@@ -24,9 +35,23 @@
                     <li><a href="typography/fonttypearticle.html">Font Type Article</a></li>
                     <li><a href="typography/typographyarticle.html">Typography Article</a></li>
                 </ul></li>
+                <li class="contains"><a href="">Disply Mode</a>
+                    <ul>
+                        <li><button type="button" onclick="changeStyle('display','black','white')">Dark Mode</button></li>
+                        <li><button type="button" onclick="changeStyle('display')">Light Mode</button></li>
+                    </ul>
+                </li>
+                <li class="contains"><a href="">Font Size</a>
+                        <ul>
+                            <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
+                            <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
+                            <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
+                        </ul>
+                </li>
             </ul>
         </nav>
-        <p>Terminology relating to typography.</p>
+        <div id="text">
+            <p>Terminology relating to typography.</p>
         <h2>Terminology</h2>
         <dl>
             <dt><dnf><b>Ascender Line</b></dnf></dt>
@@ -50,5 +75,6 @@
             <dt><dnf><b>Monoscape</b></dnf></dt>
             <dd>Typefaces that occupy the same horizontal space. Used in typewriters and coding.</dd>
         </dl>
+        </div>
     </body>
 </html>

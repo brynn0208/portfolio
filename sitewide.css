@@ -3,8 +3,10 @@ html {
 }
 
 body {
-    font: 1.2rem/1.5 'Times New Roman', Verdana, Georgia, sans-serif;
-    background: lightgrey;
+  font: 1.2rem/1.5 'Times New Roman', Verdana, Georgia, sans-serif;
+  padding: 25px;
+  background-color: lightskyblue;
+  font-size: 18px;
 }
 
 nav {
@@ -54,6 +56,51 @@ li.contains:hover ul {
 
 li.contains li {
   float: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
+.displaymode {
+  background-color: #eee;
+  color: #8465A5;
+  cursor: pointer;
+  padding: 22px;
+  text-align: center;
+  outline: 1px;
+  font: 'Times New Roman', Verdana, Georgia, sans-serif;
+  font-size: 16px;
+}
+
+.fontsize {
+  background-color: #eee;
+  color: #8465A5;
+  cursor: pointer;
+  padding: 22px;
+  text-align: center;
+  outline: 1px;
+  font: 'Times New Roman', Verdana, Georgia, sans-serif;
+  font-size: 16px;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #8465A5;
+  cursor: pointer;
+  padding: 15px;
+  width: 80%;
+  border-radius: 12px;
+  text-align: left;
+  outline: 1px;
+  font: 'Times New Roman', Verdana, Georgia, sans-serif;
+  font-size: 16px;
+}
+
+.active, .collapsible:hover {
+  background-color: gray;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

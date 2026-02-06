@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale-1">
+        <link href="../normalize.css" rel="stylesheet">
+        <link href="../showcase.css" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+    <main id="text">
+        <script>
+            function changeColorScheme (id, backgroundColor, color) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.backgroundColor = backgroundColor;
+                    element.style.color = color;
+                }
+            }
+
+            function changeFontSize(id, size) {
+                document.getElementById(id).style.fontSize = size;
+            }
+        </script>
+    <body id="display">
+        <h1>Illustrations</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="contains"><a href="../portfolio.html">Portfolio</a>
+                <ul>
+                    <li><a href="beforeandafter.html">Before and After</a></li>
+                    <li><a href="branding.html">Branding</a></li>
+                    <li><a href="illustration.html">Illustrations</a></li>
+                    <li><a href="animation.html">Animation</a></li>
+                </ul></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li class="contains"><a href="../colortheory.html">Color Theory</a>
+                <ul>
+                    <li><a href="colortheory/colortheoryarticle.html">Color Theory Article</a></li>
+                    <li><a href="colortheory/colorthemes.html">Color Themes</a></li>
+                </ul></li>
+                <li class="contains"><a href="../typography.html">Typography</a>
+                <ul>
+                    <li><a href="typography/fonttypearticle.html">Font Type Article</a></li>
+                    <li><a href="typography/typographyarticle.html">Typography Article</a></li>
+                </ul></li>
+                <li class="contains"><a href="">Disply Mode</a>
+                    <ul>
+                        <li><button type="button" onclick="">Dark Mode</button></li>
+                        <li><button type="button" onclick="">Light Mode</button></li>
+                    </ul>
+                </li>
+                <li class="contains"><a href="">Font Size</a>
+                        <ul>
+                            <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
+                            <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
+                            <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+        <p>
+            <h4>Beanstalk</h4>
+            <div id="div1" class="box">
+                <a href="Images/Beanstalk.png">
+                <img src="Images/Beanstalk.png" alt="A sky-reaching beanstalk against a sunny sky">
+                </a>
+            </div>
+            <p>placeholder</p>
+            <h4>A skyward reaching large vine against a sunny sky.</h4>
+            <div id="div1" class="box">
+                <a href="Images/Cavern.png">
+                <img src="Images/Cavern.png" alt="A dark cavern with a flowing lava river">
+                </a>
+            </div>
+            <p>A dark cavern with stalagmites and stalagtites with a lava river flowing behind them and black ore embedded in the back walls.</p>
+            <h4>Three Little Birds</h4>
+            <div id="div1" class="box">
+                <a href="Images/ThreeLittleBirds.png">
+                <img src="Images/ThreeLittleBirds.png" alt="Three silly looking birds perched or sitting on a branch">
+                </a>
+            </div>
+            <p>Three aquamarine-colored cartoonish birds on a branch.</p>
+        </p>
+    </body>
+    </main>
+</html>

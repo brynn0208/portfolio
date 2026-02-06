@@ -6,12 +6,32 @@
         <link href="../color-and-type.css" rel="stylesheet">
         <title>My Portfolio</title>
     </head>
-    <body>
+    <main id="text">
+        <script>
+            function changeColorScheme (id, backgroundColor, color) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.backgroundColor = backgroundColor;
+                    element.style.color = color;
+                }
+            }
+
+            function changeFontSize(id, size) {
+                document.getElementById(id).style.fontSize = size;
+            }
+        </script>
+        <body id="display">
         <h1>Font Type Article</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li class="contains"><a href="../portfolio.html">Portfolio</a>
+                <ul>
+                    <li><a href="../portfolio/beforeandafter.html">Before and After</a></li>
+                    <li><a href="../portfolio/branding.html">Branding</a></li>
+                    <li><a href="../portfolio/illustration.html">Illustrations</a></li>
+                    <li><a href="../portfolio/animation.html">Animation</a></li>
+                </ul></li>
                 <li><a href="../resume.html">Resume</a></li>
                 <li class="contains"><a href="../colortheory.html">Color Theory</a>
                 <ul>
@@ -23,6 +43,19 @@
                     <li><a href="fonttypearticle.html">Font Type Article</a></li>
                     <li><a href="typographyarticle.html">Typography Article</a></li>
                 </ul></li>
+                <li class="contains"><a href="">Disply Mode</a>
+                    <ul>
+                        <li><button type="button" onclick="">Dark Mode</button></li>
+                        <li><button type="button" onclick="">Light Mode</button></li>
+                    </ul>
+                </li>
+                <li class="contains"><a href="">Font Size</a>
+                        <ul>
+                            <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
+                            <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
+                            <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
+                        </ul>
+                </li>
             </ul>
         </nav>
         <p class="indent">Font types are a varied and necessary part of typography. For readable articles and eye-catching logos alike, 
@@ -55,4 +88,5 @@
             in usability. Whenever I start up a new doc, I immediately change the font to bitter to get the work done 
             as efficiently as possible.</p>
     </body>
+    </main>
 </html>
