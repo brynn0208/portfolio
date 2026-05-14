@@ -5,100 +5,136 @@
         <meta name="viewport" content="width=device-width, intial-scale-1">
         <link href="../normalize.css" rel="stylesheet">
         <link href="sitewide.css" rel="stylesheet">
-        <title>Resume</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>My Portfolio</title>
     </head>
     <main id="text">
-        <script>
-            function changeColorScheme (id, backgroundColor, color) {
-                const element = document.getElementById(id);
-                if (element) {
-                    element.style.backgroundColor = backgroundColor;
-                    element.style.color = color;
-                }
-            }
-
-            function changeFontSize(id, size) {
-                document.getElementById(id).style.fontSize = size;
-            }
-        </script>
+        <body id="display">
         <h1>Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="contains"><a href="portfolio.html">Portfolio</a>
-                <ul>
-                    <li><a href="portfolio/beforeandafter.html">Before and After</a></li>
-                    <li><a href="portfolio/branding.html">Branding</a></li>
-                    <li><a href="portfolio/illustration.html">Illustrations</a></li>
-                    <li><a href="portfolio/animation.html">Animation</a></li>
-                </ul></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li class="contains"><a href="colortheory.html">Color Theory</a>
-                <ul>
-                    <li><a href="colortheory/colortheoryarticle.html">Color Theory Article</a></li>
-                    <li><a href="colortheory/colorthemes.html">Color Themes</a></li>
-                </ul></li>
-                <li class="contains"><a href="typography.html">Typography</a>
-                <ul>
-                    <li><a href="typography/fonttypearticle.html">Font Type Article</a></li>
-                    <li><a href="typography/typographyarticle.html">Typography Article</a></li>
-                </ul></li>
-                <li class="contains"><a href="">Display Mode</a>
-                    <ul>
-                        <li><button type="button" onclick="changeColorScheme('display', 'black', 'white')">Dark Mode</button></li>
-                        <li><button type="button" onclick="changeColorScheme('display', 'white', 'black')">Light Mode</button></li>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">My Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li><hr class="dropdown-divider"></hr></li>
+                                <li><a class="dropdown-item" href="portfolio/beforeandafter.html">Before and After</a></li>
+                                <li><a class="dropdown-item" href="portfolio/branding.html">Branding</a></li>
+                                <li><a class="dropdown-item" href="portfolio/illustration.html">Illustrations</a></li>
+                                <li><a class="dropdown-item" href="portfolio/animation.html">Animation</a></li>
+                            </ul>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="colortheory.html" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Color Theory</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="colortheory.html">Color Theory</a></li>
+                                <li><hr class="dropdown-divider"></hr></li>
+                                <li><a class="dropdown-item" href="colortheory/colortheoryarticle.html">Color Theory Article</a></li>
+                                <li><a class="dropdown-item" href="colortheory/colorthemes.html">Color Themes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="typography.html" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Typography</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                                <li><hr class="dropdown-divider"></hr></li>
+                                <li><a class="dropdown-item" href="typography/fonttypearticle.html">Font Type Article</a></li>
+                                <li><a class="dropdown-item" href="typography/typographyarticle.html">Typography Article</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li class="contains"><a href="">Font Size</a>
-                    <ul>
-                        <li><button type="button" onclick="changeFontSize('text', '12px')">Small</button></li>
-                        <li><button type="button" onclick="changeFontSize('text', '18px')">Medium</button></li>
-                        <li><button type="button" onclick="changeFontSize('text', '24px')">Large</button></li>
-                    </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
         <body id="display">
         <h2>Brynna</h2>
-        <button type="button" class="collapsible">Skills</button>
+        <button type="button" class="collapsible">Skill List</button>
         <div class="content">
-        <h3>Skills</h3>
-        <p>Organized, task oriented, hard-worker, great work ethic, flexible schedule, eager to learn, and computer savviness/experience.</p>
+        <section id="experience" class="p-2 p-md-3 mb-2 mb-md-3 border rounded shadow">
+            <h3 class="text-uppercase display-4">Skills</h3>
+            <div class="d-flex flex-column-reverse">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <ul>
+                                <li>Organized</li>
+                                <li>Task oriented</li>
+                                <li>Hard-worker</li>
+                                <li>Great work ethic</li>
+                                <li>Flexible schedule</li>
+                                <li>Eager to learn</li>
+                                <li>Computer savviness/experience</li>
+                            </ul>
+                            </p>
+                        <div class="fst-italic text-end">March 2013 - Present</div>
+                    </div>
+                </div>
+            </div>
+        </section>
        </div>
        <button type="button" class="collapsible">Experience</button>
         <div class="content">
-        <h3>Experience</h3>
-        <h4><strong>Independent Pet Caretaker</strong> - <em>Pet Sitter</em></h4>
-        <em>2015-Current</em>
-        <ul>
-            <li>In House or Viistation</li>
-            <li>Dog Walking Upon Request</li>
-        </ul>
-        <h4><strong>Pet Groomer Space</strong> - <em>Grooming Asistant</em></h4>
-        <em>2016-2017</em>
-        <ul>
-            <li>Pet Bathing</li>
-            <li>Bathing Area/Shop Cleaning</li>
-            <li>Client Data Entry</li>
-        </ul>
-        <h4><strong>Pet Store</strong> - <em>Retail Associate</em></h4>
-        <em>Summer 2021-Summer 2024</em>
-        <ul>
-            <li>Register Skills</li>
-            <li>Opening/Closing Duties</li>
-            <li>Iventory/Stocking</li>
-            <li>Costumer Service Responsibilities</li>
-        </ul>
+        <section id="experience" class="p-2 p-md-3 mb-2 mb-md-3 border rounded shadow">
+            <h3 class="text-uppercase display-4">Experience</h3>
+            <div class="d-flex flex-column-reverse">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Grooming Assistant</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Independent Pet Groomer Space</h6>
+                        <p class="card-text">Pet bathing, bathing area / shop cleaning, and client data entry.</p>
+                        <div class="fst-italic text-end">2016-2017</div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Retail Associate</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Independent Pet Store</h6>
+                        <p class="card-text">Register experience, opening/closing duties, inventory/stocking responsibilities, and customer service responsibilities.</p>
+                        <div class="fst-italic text-end">Summer 2021-Summer 2024</div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Sitter</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Independent Pet Caretaker</h6>
+                        <p class="card-text">In house or visitation. Dog walking upon request.</p>
+                        <div class="fst-italic text-end">2015 - Current</div>
+                    </div>
+                </div>
+            </div>
         </div>
+        </section>
         <button type="button" class="collapsible">Education</button>
         <div class="content">
-        <h3>Education</h3>
-        <h4><strong>Somewhere College</strong> - <em>General Education / Graphic Design certification</em></h4>
-        <em>Spring 2018-Spring 2021</em>, <strong>Nowhere, Special, State</strong>
-        <p>Graduated with honors</p>
-        <h4><strong>Better University</strong> - <em>Ongoing education</em></h4>
-        <em>Summer 2025-Current</em>, <strong>Location</strong>
-        <p>Currently in attendance</p>
+        <section id="education" class="p-2 p-md-3 mb-2 mb-md-3 border rounded shadow">
+            <h3 class="text-uppercase display-4">Education</h3>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">General Education / Graphic Design certification</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Somewhere College</h6>
+                    <p class="card-text">Graduated with honors.</p>
+                    <div class="fst-italic text-end">Spring 2018-Spring 2021. Nowhere, Special, State</div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Web Design</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Better University</h6>
+                    <p class="card-text">Currently Attending</p>
+                    <div class="fst-italic text-end">Summer 2025-Current. Online</div>
+                </div>
+            </div>
+        </section>
         </div>
         <script>
         var coll = document.getElementsByClassName("collapsible");

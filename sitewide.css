@@ -55,7 +55,7 @@ li.contains:hover ul {
 }
 
 li.contains li {
-  float: none;
+  float: left;
   font-size: 1rem;
 }
 
